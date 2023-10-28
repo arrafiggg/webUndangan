@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan</title>
+    <link rel="stylesheet" href="wir.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Undangan Pernikahan</h1>
+            <br>
+            <p><h1>Arafi Dan Anime</h1></p>
+        </header>
+        <main>
+            <section id="cover">
+                <img src="nikahan.png" alt="Gambar Sampul" />
+            </section>
+            <section id="details">
+                <h2>Detail Acara</h2>
+                <ul>
+                    <li>Tanggal: 12 Oktober 2023</li>
+                    <li>Waktu: 15:00 WIB</li>
+                    <li>Tempat: Hotel Serenity, Jakarta</li>
+                </ul>
+            </section>
+            <section id="rsvp">
+                <h2>Konfirmasi Kehadiran</h2>
+                <form id="rsvp-form">
+                    <label for="name">Nama Anda:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email Anda:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="attendance">Kehadiran:</label>
+                    <select id="attendance" name="attendance" required>
+                        <option value="yes">Ya, Saya Akan Datang</option>
+                        <option value="no">Maaf, Saya Tidak Bisa Hadir</option>
+                    </select>
+                    <button type="submit">Konfirmasi Kehadiran</button>
+                </form>
+            </section>
+            <section id="countdown">
+                <h2>Perhitungan Mundur Menuju Pernikahan</h2>
+                <div id="countdown-timer">
+                    <div class="countdown-item">
+                        <span id="days" class="countdown-value">0</span>
+                        <span class="countdown-label">hari</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="hours" class="countdown-value">0</span>
+                        <span class="countdown-label">jam</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="minutes" class="countdown-value">0</span>
+                        <span class="countdown-label">menit</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="seconds" class="countdown-value">0</span>
+                        <span class="countdown-label">detik</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Terima kasih atas dukungan dan cinta Anda.</p>
+        </footer>
+    </div>
+    <script src="ja.js"></script>
+</body>
+</html>
